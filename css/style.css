@@ -26,6 +26,7 @@ h3 {
     cursor: pointer;
     visibility: hidden;
     opacity: 0;
+    z-index: 40;
     transition: 0.2s;
 }
 
