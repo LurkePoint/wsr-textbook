@@ -1,0 +1,1094 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../js/styles/github.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Учебник - Задания по PHP</title>
+</head>
+<body>
+    <header>
+        <div class="block_header">
+            <div class="block_logo">
+                <a href="../index.html"><img class="logo" src="../images/logo.svg" alt=""></a>
+            </div>
+            <nav class="menu">
+                <div class="menu_item"><a href="../index.html" class="menu_item_a">Главная</a></div>
+                <div class="menu_item"><a href="#no_scroll" class="menu_item_a menu_tasks">Задания <img class="arrow_sub" src="../images/arrow-sub.svg" alt=""></a>
+                    <div class="block_submenu">
+                        <div class="submenu">
+                            <div class="submenu_item"><a href="#no_scroll" class="submenu_item_a submenu_tasks_back">Задания <img class="arrow_sub arrow_back" src="../images/arrow-sub.svg" alt=""></a></div>
+                            <div class="submenu_item"><a href="../php.html" class="submenu_item_a">PHP</a></div>
+                            <div class="submenu_item"><a href="../javascript.html" class="submenu_item_a">JavaScript</a></div>
+                        </div>
+                    </div>
+                    <div class="submenu_fon"></div>
+                </div>
+            </nav>
+            <div class="burger_menu">
+                <div class="line_one"></div>
+                <div class="line_two"></div>
+                <div class="line_three"></div>
+            </div>
+        </div>
+    </header>
+
+    <div class="main">
+
+        <div class="block_top">
+            <img class="arrow_up" src="../images/arrow-up.svg" alt="">
+        </div>
+
+        <h1>Задания по PHP</h1>
+        <h2>Задание - создание веб-сайта для компании "GroomRoom"</h2>
+        <p>Выполненное задание можно посмотреть <a href="http://j915927n.beget.tech" target="_blank"><b>здесь</b></a></p>
+        
+        <div class="selector_description">
+            <div class="title_description">Описание задания <img class="arrow_description" src="../images/arrow-sub.svg" alt=""></div>
+            <div class="block_description">
+                <div class="description">
+
+                    <b>Технологии этого модуля:</b> HTML5, CSS3, server-side, граф. дизайн.
+
+                    <p>К вам обратилась компания «GroomRoom», предоставляющая услуги груминга – ухода
+                    за внешним видом животного, его кожей и шерстью, когтями и ушами. Вам необходимо
+                    реализовать веб-ресурс, на котором зарегистрированные пользователи могли бы загружать
+                    фотографии домашних животных, а сотрудники компании публиковали бы результаты после
+                    проведения соответствующих процедур.</p>
+
+                    <p>Вы можете использовать предоставленные фреймворки и библиотеки: Yii, Laravel,
+                    Django.</p>
+
+                    <p>Ваша верстка должна быть адаптивна и корректно отображаться на
+                    следующих устройствах:
+                        <ul>
+                            <li>смартфоны с разрешением 375 x 812px;</li>
+                            <li>компьютеры с шириной экрана от 1200px.</li>
+                        </ul>
+                    </p>
+
+                    <p>На сайте должны быть реализованы следующие страницы:
+                        <ul>
+                            <li>Главная страница, предоставляющая возможности авторизации и регистрации
+                                пользователей.</li>
+                            <li>Личные кабинеты администратора и авторизованных пользователей.</li>
+                        </ul>
+                    </p>
+
+                    <p>Портал должен поддерживать возможности 3 типов пользователей:</p>
+                        <ul>
+                            <li>Гость.</li>
+                            <li>Авторизованный пользователь.</li>
+                            <li>Администратор.</li>
+                            Возможности гостя:
+                                <ul>
+                                    <li>Вход в личный кабинет по логину и паролю;</li>
+                                    <li>Регистрация;</li>
+                                    <li>Просмотр главной страницы.</li>
+                                </ul>
+                            Возможности авторизованного пользователя:
+                                <ul>
+                                    <li>Просмотр главной страницы;</li>
+                                    <li>Выход;</li>
+                                    <li>Создание заявки (запись) на оказание услуг груминга домашним животным;</li>
+                                    <li>Просмотр своих заявок;</li>
+                                    <li>Удаление своей заявки.</li>
+                                </ul>
+                            Возможности администратора:
+                                <ul>
+                                    <li>Смена статуса заявки на «Обработка данных» или «Услуга оказана».</li>
+                                </ul>
+                        </ul>
+
+                        <p><b>Авторизация пользователя и администратора (на главной странице):</b></p>
+                        При вводе неправильной пары логин-пароль пользователю отображается сообщение
+                        об ошибке.<br>
+                        При успешной авторизации пользователь должен перенаправляться в личный кабинет
+                        с возможностью просмотра своих заявок. Личный кабинет доступен только авторизованному
+                        пользователю.<br>
+                        Панель управления сайтом (личный кабинет администратора) доступна только
+                        администратору.<br>
+                        Все авторизованные пользователи могут выйти из профиля по нажатию на ссылку/кнопку
+                        «Выход».
+
+                        <p><b>Регистрация пользователя (на главной странице):</b></p>
+                            <ul>
+                                <li>ФИО;</li>
+                                <li>Логин;</li>
+                                <li>Email;</li>
+                                <li>Пароль;</li>
+                                <li>Повтор пароля – введенное значение должно совпадать с паролем;</li>
+                                <li>Согласие на обработку персональных данных - должно быть отмечено.</li>
+                            </ul>
+
+                        <p><b>Создание заявки (на странице пользователя по адресу http://...m1.wsr.ru/user):</b></p>
+                            <ul>
+                                <li>Кличка домашнего животного, обязательное поле;</li>
+                                <li>Фото домашнего животного в одном из форматов (jpeg, bmp) максимальный
+                                    размер 2Мб; при невыполнении хотя бы одного из требований, заявка не
+                                    сохраняется на сервере, выводится сообщения об ошибке, обязательное поле;</li>
+                                <li>При добавлении заявки она должна автоматически получить статус «Новая».</li>
+                            </ul>
+                            
+                        <p><b>Удаление заявки (на странице пользователя по адресу http://...m1.wsr.ru/user):</b></p>
+                        Пользователь может удалить только свою заявку, статус которой не был изменен
+                        администратором на «Обработка данных» или «Услуга оказана».<br>
+
+                        <p><b>Просмотр своих заявок (на странице пользователя по адресу http://...m1.wsr.ru/user):</b></p>
+                        На странице просмотра своих заявок необходимо отобразить список своих заявок со
+                        следующими полями:<br>
+                        <ul>
+                            <li>Кличка домашнего животного;</li>
+                            <li>Статус заявки («Новая», «Обработка данных», «Услуга оказана»).</li>
+                        </ul>
+
+                        <p><b>Главная страница:</b></p>
+                        На главной странице выводится не более 4 последних заявок в статусе «Услуга
+                        оказана» со следующими полями:<br>
+                        <ul>
+                            <li>Кличка домашнего животного;</li>
+                            <li>Фотография домашнего животного, загруженное при создании заявки.</li>
+                        </ul>
+
+                        <p><b>Смена статуса заявки (в административной панели по адресу http://...m1.wsr.ru/groom):</b></p>
+                        Заявке со статусом «Новая» можно сменить статус на «Обработка данных».<br>
+                        Заявке со статусом «Обработка данных» можно сменить статус на «Услуга оказана» с
+                        обязательным прикреплением (добавлением) изображения – фотографии, демонстрирующей
+                        результат оказанной услуги.<br>
+                        Панель управления сайтом (личный кабинет администратора) доступна только
+                        администратору.<br>
+                        Смена статуса «Услуга оказана» невозможна.
+
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="selector_description">
+            <div class="title_description">Содержание <img class="arrow_description" src="../images/arrow-sub.svg" alt=""></div>
+            <div class="block_description">
+                <div class="description">
+                    <a href="#stepOne" class="description_item">Шаг 1: создание базы данных с необходимыми таблицами</a>
+                    <a href="#stepTwo" class="description_item">Шаг 2: создание всех необходимых директорий и файлов для сайта</a>
+                    <a href="#stepThree" class="description_item">Шаг 3: создание подключения к базе данных</a>
+                    <a href="#stepFour" class="description_item">Шаг 4: регистрация пользователя</a>
+                    <a href="#stepFive" class="description_item">Шаг 5: авторизация пользователя</a>
+                    <a href="#stepSix" class="description_item">Шаг 6: выход пользователя</a>
+                    <a href="#stepSeven" class="description_item">Шаг 7: редактирование HTML разметки под определенного пользователя и создание редиректов</a>
+                    <a href="#stepEight" class="description_item">Шаг 8: отправка заявки</a>
+                    <a href="#stepNine" class="description_item">Шаг 9: вывод заявок в личном кабинете пользователя с пагинацией и возможностью их удаления</a>
+                    <a href="#stepTen" class="description_item">Шаг 10: вывод заявок в личном кабинете администратора с пагинацией и возможностью их обработки</a>
+                    <a href="#stepEleven" class="description_item">Шаг 11: вывод всех выполненных заявок на главной странице с пагинацией</a>
+                    <a href="#stepTwelve" class="description_item">Шаг 12: адаптив и стили</a>
+                </div>
+            </div>    
+        </div>
+
+        <h3 id="stepOne">Шаг 1: создание базы данных с необходимыми таблицами</h3>
+
+        <p>
+            Так как в задании ни слова о том, что база данных есть уже готовая, мы создадим свою локально.<br>
+            Для этого дела я буду использовать <b>OpenServer</b>. 
+            Включаем эту программу, запускаем сервер и переходим в <b>PhpMyAdmin</b>.
+            Там с нас потребуют логин и пароль (по умолчанию логин - root, пароль - root или же пустая строка).<br>
+            Создаем базу данных - я назову ее <b>groom</b>.<br>
+            В этой базе создаем две таблицы: <b>users</b> и <b>applications</b>.<br>
+
+            <p><b>Таблица users:</b></p>
+
+            Здесь будут храниться данные о пользователях, включая данные об администраторе.<br>
+            <img class="img_tasks" src="../images/skreenTableUsers.png" alt="">
+
+            <p><b>Таблица applications:</b></p>
+
+            Здесь будут храниться данные о заявлениях.<br>
+            <img class="img_tasks" src="../images/skreenTableApplications.png" alt="">
+
+            <p><b>Каскадная связь между id и id_user:</b></p>
+
+            Это нужно для того, чтобы при удалении пользователя из таблицы удалялись все его заявления.<br>
+            <img class="img_tasks img_small" src="../images/skreenTablesCommunication.png" alt="">
+        </p>
+
+        <h3 id="stepTwo">Шаг 2: создание всех необходимых директорий и файлов для сайта</h3>
+
+        <p>
+            Заходим в папку <b>OpenServer</b> в проводнике, 
+            затем в папку <b>domains</b> и тут создаем папку с проектом (я назову ее <b>groomroom</b>).<br>
+            <p>Содержимое проекта будет выглядеть так:</p>
+            <img class="img_tasks img_small" src="../images/skreenProjectGroomRoom.png" alt=""><br>
+            <p>В папке <b>images</b> лежат фотографии фона и логотипа, поэтому ее создавать необязательно.</p>
+            <p>В папках <b>groom</b> и <b>user</b> лежит один файл с названием - <b>index.php</b>.</p>
+            <p>Содержимое папки <b>vendor</b>:</p>
+            <img class="img_tasks img_small" src="../images/skreenProjectGroomRoomVendor.png" alt="">
+        </p>
+
+        <h3 id="stepThree">Шаг 3: создание подключения к базе данных</h3>
+
+        <p>
+            Для работы с базой данных через PHP-код будем использовать <b>PDO</b>.<br>
+            <b>PDO</b> - расширение PHP, которое реализует взаимодействие с 
+            базами данных при помощи объектов. Профит в том, 
+            что отсутствует привязка к конкретной системе управления 
+            базами данных. 
+            PDO поддерживает СУБД: MySQL, PostgreSQL, SQLite, Oracle, Microsoft SQL Server и другие.
+            Также, используя PDO, мы защищаем проект от SQL-инъекций.
+
+            <p>Открываем файл <b>connect.php</b> и пишем в нем такой код:</p>
+        
+<pre><code>&lt;?php
+$pdo = new PDO('mysql:host=localhost;dbname=groom;charset=utf8', 'root', 'root', [
+    PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC, // эта опция нормализует массивы
+]);
+</code></pre>
+    
+        </p>
+
+        <h3 id="stepFour">Шаг 4: регистрация пользователя</h3>
+
+        <p>Открываем общий файл <b>index.php</b> и пишем в нем такой код:</p>
+
+<pre><code>&lt;?php
+    // запуск сессий, чтобы мы могли использовать суперглобальную переменную $_SESSION
+    session_start();
+    // подключение файла с подключением к базе данных
+    require_once 'connect.php';
+?>
+
+&lt;!DOCTYPE html>
+&lt;html lang="ru">
+&lt;head>
+    &lt;meta charset="UTF-8">
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge">
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0">
+    &lt;link rel="stylesheet" href="style.css" type="text/css">
+    &lt;title>GroomRoom&lt;/title>
+&lt;/head>
+&lt;body>
+    &lt;header>
+
+    &lt;/header>
+
+    &lt;div class="main">
+
+    &lt;/div>
+
+    &lt;footer>
+        
+    &lt;/footer>
+&lt;/body>
+&lt;/html>
+</code></pre>
+        
+        <p>В блоке с классом <b>main</b> пишем код формы регистрации:</p>
+
+<pre><code>&lt;form class="form" action="vendor/registr_vendor.php" method="post">
+&lt;h2>Регистрация&lt;/h2>
+    &lt;input type="text" name="fio" placeholder="Введите ФИО" required>
+    &lt;input type="text" name="login" placeholder="Введите логин" required>
+    &lt;input class="email" type="email" name="email" placeholder="Введите email" required>
+    &lt;input type="password" name="password" placeholder="Введите пароль" required>
+    &lt;input type="password" name="password_confirm" placeholder="Повторите пароль" required>
+    &lt;label class="check">
+        &lt;input type="checkbox" class="check_input" required>Соглашаюсь на обработку персональных данных
+    &lt;/label>
+    &lt;button type="submit">Зарегистрироваться&lt;/button>
+&lt;/form>
+</code></pre>
+
+        <p>Теперь пропишем код в файле <b>registr_vendor.php</b>, с помощью 
+        которого будут выполняться определенные запросы для регистрации пользователя:</p>
+
+<pre><code>&lt;?php
+    session_start();
+    require_once '../connect.php';
+
+    $fio = $_POST['fio'];
+    $login = $_POST['login'];
+    $email = $_POST['email'];
+    $password = md5($_POST['password']);
+    $password_confirm = md5($_POST['password_confirm']);
+
+    // выборка логина в таблице, который мы вводим при регистрации
+    $query_login = $pdo->prepare('SELECT * FROM users WHERE login = ?');
+    $query_login->execute([
+        $login
+    ]);
+
+    // выборка почты в таблице, которую мы вводим при регистрации
+    $query_email = $pdo->prepare('SELECT * FROM users WHERE email = ?');
+    $query_email->execute([
+        $email
+    ]);
+
+    // проверка на совпадение паролей при регистрации
+    if ($password !== $password_confirm) {
+        // создание сессионной переменной, в которой мы можем написать определенное сообщение и воспользоваться ей на других страницах
+        $_SESSION['messagePass'] = 'Пароли не совпадают';
+        // перенаправление пользователя сайта на главную страницу
+        header('Location: /');
+    } 
+
+    // проверка на наличие логина и почты в таблице, которые мы вводим при регистрации
+    elseif (($query_login->rowCount() > 0) && ($query_email->rowCount() > 0)) {
+        $_SESSION['messageLoginEmail'] = 'Пользователь с таким логином и почтой уже существует';
+        header('Location: /');
+    }
+
+    // проверка на наличие логина таблице, который мы вводим при регистрации
+    elseif ($query_login->rowCount() > 0) {
+        $_SESSION['messageLogin'] = 'Пользователь с таким логином уже существует';
+        header('Location: /');
+    }
+
+    // проверка на наличие почты в таблице, которую мы вводим при регистрации
+    elseif ($query_email->rowCount() > 0) {
+        $_SESSION['messageLogin'] = 'Пользователь с такой почтой уже существует';
+        header('Location: /');
+    }
+    
+    else {
+    
+    // добавление данных о новом пользователе в таблицу
+    $pdo->prepare('INSERT INTO users (id, fio, login, email, password, status_user) VALUES (NULL, ?, ?, ?, ?, 1)')->execute([
+        $fio,
+        $login,
+        $email,
+        $password
+    ]);
+
+    // выборка идентификационного номера только что зарегистрированного пользователя
+    $res = $pdo->prepare('SELECT id FROM users WHERE login = ?');
+    $res->execute([
+        $login
+    ]);
+    
+    $dir_id = $res->fetchColumn();
+    $path_user = "../uploads/{$dir_id}";
+
+    // создание уникальной директории для зарегистрированного пользователя в папке uploads, в которой будут храниться фотографии
+    mkdir($path_user, 0777);
+    
+    $_SESSION['messageReg'] = 'Регистрация прошла успешно!';
+    header('Location: /');
+    
+    }
+</code></pre>
+
+        <p>Теперь добавим сессионные переменные к форме 
+        регистрации, содержимое которых будет появляться на экране в случае ошибки или успешной регистрации:</p>
+   
+<pre><code>&lt;form class="form" action="vendor/registr_vendor.php" method="post">
+&lt;h2>Регистрация&lt;/h2>
+    &lt;input type="text" name="fio" placeholder="Введите ФИО" required>
+    &lt;input type="text" name="login" placeholder="Введите логин" required>
+    &lt;input class="email" type="email" name="email" placeholder="Введите email" required>
+    &lt;input type="password" name="password" placeholder="Введите пароль" required>
+    &lt;input type="password" name="password_confirm" placeholder="Повторите пароль" required>
+    &lt;label class="check">
+        &lt;input type="checkbox" class="check_input" required>Соглашаюсь на обработку персональных данных
+    &lt;/label>
+    &lt;button type="submit">Зарегистрироваться&lt;/button>
+
+    &lt;?php
+        if (isset($_SESSION['messagePass'])) {
+            echo '&lt;h4 style="border: 2px solid red; padding: 5px;">'. $_SESSION['messagePass'] . '&lt;/h4>';
+            unset($_SESSION['messagePass']);
+        }
+        if (isset($_SESSION['messageLoginEmail'])) {
+            echo '&lt;h4 style="border: 2px solid red; padding: 5px;">'. $_SESSION['messageLoginEmail'] . '&lt;/h4>';
+            unset($_SESSION['messageLoginEmail']);
+        }
+        if (isset($_SESSION['messageLogin'])) {
+            echo '&lt;h4 style="border: 2px solid red; padding: 5px;">'. $_SESSION['messageLogin'] . '&lt;/h4>';
+            unset($_SESSION['messageLogin']);
+        }
+        if (isset($_SESSION['messageEmail'])) {
+            echo '&lt;h4 style="border: 2px solid red; padding: 5px;">'. $_SESSION['messageEmail'] . '&lt;/h4>';
+            unset($_SESSION['messageEmail']);
+        }
+        if (isset($_SESSION['messageReg'])) {
+            echo '&lt;h4 style="border: 2px solid lightgreen; padding: 5px;">'. $_SESSION['messageReg'] . '&lt;/h4>';
+            unset($_SESSION['messageReg']);
+        }
+    ?>
+
+&lt;/form>
+</code></pre>
+
+        <h3 id="stepFive">Шаг 5: авторизация пользователя</h3>
+
+        <p>Открываем общий файл <b>index.php</b> и пишем в нем такой код:</p>
+   
+<pre><code>&lt;form class="form" action="vendor/avtoriz_vendor.php" method="post">
+    &lt;h2>Авторизация&lt;/h2>
+    &lt;input type="text" placeholder="Введите логин" name="login" required>
+    &lt;input type="password" placeholder="Введите пароль" name="password" required>
+    &lt;button type="submit">Авторизоваться&lt;/button>
+    &lt;?php
+        if (isset($_SESSION['messageNo'])) {
+            echo '&lt;h4 style="border: 2px solid red; padding: 5px;">'. $_SESSION['messageNo'] . '&lt;/h4>';
+            unset($_SESSION['messageNo']);
+        }
+    ?>
+&lt;/form>
+</code></pre>
+
+        <p>Открываем файл <b>avtoriz_vendor.php</b> и пишем в нем код для авторизации пользователя:</p>
+
+<pre><code>&lt;?php
+    session_start();
+    require_once '../connect.php';
+
+    $login = $_POST['login'];
+    $password = md5($_POST['password']);
+
+    // выборка логина и пароля, которые мы вводим при авторизации
+    $check_user = $pdo->prepare('SELECT * FROM users WHERE login = ? AND password = ?');
+    $check_user->execute([
+        $login,
+        $password
+    ]);
+
+    // преобразование выбранных данных о пользователе в ассоциативный массив
+    $user = $check_user->fetch();
+
+    // проверка на наличие тех данных, которые мы вводим при авторизации
+    if ($check_user->rowCount() > 0) {
+
+        // если статус пользователя равен 1 (это статус обычного пользователя), то произойдет перенаправление на страницу личного кабинета пользователя
+        if ($user['status_user'] === '1') {
+
+            // в сессионные переменные закидываем данные об авторизированном пользователе, которые понадобятся в дальнейшем
+            $_SESSION['user'] = $user['login'];
+            $_SESSION['user_fio'] = $user['fio'];
+            $_SESSION['user_id'] = $user['id'];
+            $_SESSION['status_user'] = $user['status_user'];
+            header('Location: ../user');
+        } 
+        
+        // иначе произойдет перенаправление на страницу личного кабинета администратора
+        else {
+            $_SESSION['user'] = $user['login'];
+            $_SESSION['user_id'] = $user['id'];
+            $_SESSION['status_user'] = $user['status_user'];
+            header('Location: ../groom');
+        }
+    } else {
+        $_SESSION['messageNo'] = 'Неверный логин или пароль';
+        header('Location: /');
+    }
+</code></pre>
+
+        <h3 id="stepSix">Шаг 6: выход пользователя</h3>
+
+        <p>В личных кабинетах обычного пользователя и администратора 
+        выведем сообщение "Здравствуйте, (логин)" и ссылку "Выход", 
+        которая будет перенаправлять нас в файл <b>exit_vendor.php:</b>.</p>
+        
+<pre><code>&lt;?php
+    if (isset($_SESSION['user'])) {
+        echo 'Здравствуйте, ' . $_SESSION['user'] . '!';
+        echo '&lt;br>&lt;a href="../vendor/exit_vendor.php">Выход&lt;/a>';
+    }
+?>
+</code></pre>
+
+        <p>В файле <b>exit_vendor.php</b> напишем такой код:</p>
+
+<pre><code>&lt;?php
+    session_start();
+
+    // просто удаляем сессию, которая отвечает за авторизированного пользователя
+    unset($_SESSION['user']);
+    header('Location: /');
+</code></pre>
+
+        <h3 id="stepSeven">Шаг 7: редактирование HTML разметки под определенного пользователя и создание редиректов</h3>
+
+        <p><b>Редиректом</b> в терминах IT называют автоматическую 
+        переадресацию пользователя с одного адреса страницы на другой. 
+        Это нужно для того, чтобы, например, гость не смог попасть в 
+        личный кабинет администратора, написав определенную ссылку в адресной строке.<br>
+        Для начала создадим шапку для сайта, 
+        в которой пропишем ссылки на личный кабинет и главную страницу с определенными условиями:</p>
+
+<pre><code>&lt;header>
+    &lt;div class="header_block">
+        &lt;div class="header_block_logo">
+            &lt;a href="/">
+                &lt;img class="logo" src="images/logo.png" alt="">
+            &lt;/a>
+        &lt;/div>
+        &lt;div class="header_block_menu">
+            &lt;nav class="header_menu">
+                &lt;div class="header_menu_item">&lt;a href="/">Главная&lt;/a>&lt;/div>
+
+                &lt;!-- если сессия с данными об авторизованном пользователе существует (если пользователь авторизован), то показываем ссылку на личный кабинет -->
+                &lt;?if(isset($_SESSION['user'])):?>
+
+                    &lt;!-- если статус пользователя равен 1 (обычный пользователь) то показываем ссылку на личный кабинет обычного пользователя -->
+                    &lt;?if($_SESSION['status_user'] === '1'):?>
+
+                    &lt;div class="header_menu_item">&lt;a href="/user">Личный кабинет&lt;/a>&lt;/div>
+
+                    &lt;?endif?>
+
+                    &lt;!-- если статус пользователя равен 10 (администратор) то показываем ссылку на личный кабинет администратора -->
+                    &lt;?if($_SESSION['status_user'] === '10'):?>
+
+                    &lt;div class="header_menu_item">&lt;a href="/groom">Личный кабинет&lt;/a>&lt;/div>
+
+                    &lt;?endif?>
+                &lt;?endif?>
+            &lt;/nav>
+        &lt;/div>
+    &lt;/div>
+&lt;/header>
+</code></pre>
+
+        <p>Так же пропишем условие для показа форм авторизации и регистрации:</p>
+
+<pre><code>// если пользователь не авторизован, то показываем формы авторизации и регистрации на главной странице
+&lt;?if(!isset($_SESSION['user'])):?>
+    // форма авторизации
+    // форма регистрации
+&lt;?endif?>
+</code></pre>
+
+        <p>Теперь пропишем <b>редиректы</b> (сделать это надо перед HTML-разметкой в файлах user/index.php и groom/index.php):</p>
+
+<pre><code>// если пользователь не авторизован и пытается попасть в личный кабинет пользователя, то перенаправляем его на главную страницу
+if (!isset($_SESSION['user'])) {
+    header('Location: /');
+}
+
+// код на странице groom/index.php
+// если пользователь авторизован как обычный пользователь и пытается попасть в личный кабинет администратора, то перенаправляем его на главную страницу
+if ($_SESSION['status_user'] === '1') {
+    header('Location: /');
+}
+
+// код на странице user/index.php
+// если пользователь авторизован как администратор и пытается попасть в личный кабинет пользователя, то перенаправляем его на главную страницу
+if ($_SESSION['status_user'] === '10') {
+    header('Location: /');
+}
+</code></pre>
+
+        <h3 id="stepEight">Шаг 8: отправка заявки</h3>
+
+        <p>Создаем форму отправки заявки в личном кабинете пользователя:</p>
+
+<pre><code>&lt;form class="form_pet" action="../vendor/applications_vendor.php" method="post" enctype="multipart/form-data">
+    &lt;input type="hidden" name="user_id" value="&lt;?= $_SESSION['user_id'] ?>">
+    &lt;label class="label_user">Кличка домашнего животного:&lt;/label>
+    &lt;input type="text" name="name_pet" placeholder="Введите кличку" required>
+    &lt;label class="label_user">Фотография домашнего животного (формат фотографии - jpeg или bmp):&lt;/label>
+    &lt;input class="file" type="file" name="image" required>
+    &lt;button type="submit">Отправить&lt;/button> 
+    &lt;?php
+        if (isset($_SESSION['messageApp'])) {
+            echo '&lt;h4 style="border: 2px solid lightgreen; padding: 5px;">'. $_SESSION['messageApp'] . '&lt;/h4>';
+            unset($_SESSION['messageApp']);
+        }
+        if (isset($_SESSION['messageAppErrType'])) {
+            echo '&lt;h4 style="border: 2px solid red; padding: 5px;">'. $_SESSION['messageAppErrType'] . '&lt;/h4>';
+            unset($_SESSION['messageAppErrType']);
+        }
+        if (isset($_SESSION['messageAppErrSize'])) {
+            echo '&lt;h4 style="border: 2px solid red; padding: 5px;">'. $_SESSION['messageAppErrSize'] . '&lt;/h4>';
+            unset($_SESSION['messageAppErrSize']);
+        }
+    ?>
+&lt;/form>
+</code></pre>
+
+        <p>Затем пропишем в файле <b>applications_vendor.php</b> такой код:</p>
+
+<pre><code>&lt;?php
+    session_start();
+    require_once '../connect.php';
+
+    $user_id = $_POST['user_id'];
+    $name_pet = $_POST['name_pet'];
+
+    // создание пути приложенной фотографии от пользователя
+    $path = 'uploads/' . $user_id. '/' . time() . $user_id . $_FILES['image']['name'];
+    $type = $_FILES['image']['type'];
+    $size = $_FILES['image']['size'];
+
+    // проверка на нужный формат фотографии
+    if ($type === 'image/jpeg' || $type === 'image/bmp') {
+
+        // проверка на нужный размер фотографии
+        if ($size &lt;= '2097152') {
+
+            // загрузка фотографии пользователя в папку uploads
+            move_uploaded_file($_FILES['image']['tmp_name'], '../' . $path);
+
+            // добавление данных о заявке в таблицу
+            $pdo->prepare('INSERT INTO applications (id, id_user, name_pet, foto_pet, status) VALUES (NULL, ?, ?, ?, "Новая")')->execute([
+                $user_id,
+                $name_pet,
+                $path
+            ]);
+            $_SESSION['messageApp'] = 'Заявка успешно отправлена!';
+            header('Location: ../user/');
+        } else {
+            $_SESSION['messageAppErrSize'] = 'Размер фотографии должен быть не более 2мб';
+            header('Location: ../user/');
+        }
+    } else {
+        $_SESSION['messageAppErrType'] = 'Неверный формат фотографии';
+        header('Location: ../user/');
+    }
+</code></pre>
+
+        <h3 id="stepNine">Шаг 9: вывод заявок в личном кабинете пользователя с пагинацией и возможностью их удаления</h3>
+
+        <p>Для этого дела напишем в файле <b>user/index.php</b> такой код:</p>
+
+<pre><code>&lt;div class="block_pag">
+    &lt;?php
+    
+    if (isset($_GET['page'])) {
+        $page = $_GET['page'];
+    } else {
+        $page = 1;
+    }
+    $appCountOnPage = 4;
+    $appFrom = ($page - 1) * $appCountOnPage;
+    
+    $user_id = $_SESSION['user_id'];
+
+    // выборка заявок пользователя по 4 штуки
+    $applications = $pdo->prepare('SELECT * FROM applications WHERE id_user = :userid ORDER BY id DESC LIMIT :appFrom,:appCountOnPage');
+    $applications->bindValue(':userid', $user_id, PDO::PARAM_INT);
+    $applications->bindValue(':appFrom', $appFrom, PDO::PARAM_INT);
+    $applications->bindValue(':appCountOnPage', $appCountOnPage, PDO::PARAM_INT);
+    $applications->execute();
+
+    $applicationsCount = $pdo->prepare('SELECT * FROM applications WHERE id_user = ?');
+    $applicationsCount->execute([
+        $user_id
+    ]);
+    $count = $applicationsCount->rowCount();
+    $res = ceil($count / $appCountOnPage);
+
+    // пагинация
+    for ($i = 1; $i <= $res; $i++) {
+        if ($page == $i) {
+            $active = 'active';
+        } else {
+            $active = '';
+        }
+        echo '&lt;a class="' . $active . '" href="?page=' . $i . '">' . $i . '&lt;/a> ';
+    }
+?>
+&lt;/div>
+&lt;?php
+    $appArray = $applications->fetchAll();
+
+    // вывод заявок в виде HTML-разметки
+    if ($applications->rowCount() > 0) {
+        foreach ($appArray as $app) {
+            if ($app['status'] === 'Услуга оказана') {
+                echo '  &lt;div class="block_app" style="background-color: #BDECB6;">
+                        &lt;div class="block_app_item">Кличка питомца: ' . '&lt;span class="pet">' . $app['name_pet'] . '&lt;/span>' . '&lt;/div>
+                        &lt;div class="block_app_item">&lt;img src="../' . $app['foto_pet_admin'] . '" alt="">&lt;/div>
+                        &lt;div class="block_app_item">Статус заявки: ' . '&lt;span class="status">' . $app['status'] . '&lt;/span>' . '&lt;/div>
+                        &lt;/div>
+                    ';
+            } elseif ($app['status'] === 'Обработка данных') {
+                echo '  &lt;div class="block_app" style="background-color: #98FB98;">
+                        &lt;div class="block_app_item">Кличка питомца: ' . '&lt;span class="pet">' . $app['name_pet'] . '&lt;/span>' . '&lt;/div>
+                        &lt;div class="block_app_item">Статус заявки: ' . '&lt;span class="status">' . $app['status'] . '&lt;/span>' . '&lt;/div>
+                        &lt;/div>
+                    ';
+            } elseif ($app['status'] === 'Новая') {
+
+                // так как тут выводимая заявка Новая, мы можем ее удалить, поэтому создаем здесь форму для удаления заявки
+                echo '  &lt;div class="block_app">
+                        &lt;div class="block_app_item">Кличка питомца: ' . '&lt;span class="pet">' . $app['name_pet'] . '&lt;/span>' . '&lt;/div>
+                        &lt;div class="block_app_item">Статус заявки: ' . '&lt;span class="status">' . $app['status'] . '&lt;/span>' . '&lt;/div>
+                        &lt;div class="block_app_item">
+                        &lt;form action="../vendor/delete_vendor.php" method="post">
+                        &lt;input type="hidden" name="id" value="'. $app['id'] .'">
+                        &lt;button class="deleteApp" type="submit">Удалить запись&lt;/button>
+                        &lt;/form>
+                        &lt;/div>
+                        &lt;/div>
+                    ';
+            }
+        }
+    } else {
+        echo '&lt;div class="msg_else">Список ваших заявок пуст&lt;/div>';
+    }
+?>
+</code></pre>
+
+        <p>Для удаления заявки напишем в файле <b>delete_vendor.php</b> такой код:</p>
+
+<pre><code>&lt;?php
+    session_start();
+    require_once '../connect.php';
+
+    $id = $_POST['id'];
+
+    // выборка пути к фотографии
+    $select_foto = $pdo->prepare('SELECT foto_pet FROM applications WHERE id = ? AND status = "Новая"');
+    $select_foto->execute([
+        $id
+    ]);
+
+    $foto = $select_foto->fetchColumn();
+
+    // проверка на наличие пути к фотографии
+    if ($select_foto->rowCount() > 0) {
+
+        // удаление фотографии из папки uploads
+        unlink("../" . $foto);
+
+        // удаление заявки
+        $pdo->prepare('DELETE FROM applications WHERE id = ?')->execute([
+            $id
+        ]);
+        header('Location: ../user/');
+    } else {
+        $_SESSION['messageDelete'] = 'Заявка уже обрабатывается';
+        header('Location: ../user/');
+    }
+</code></pre>
+
+        <h3 id="stepTen">Шаг 10: вывод заявок в личном кабинете администратора с пагинацией и возможностью их обработки</h3>
+
+        <p>Для этого дела напишем в файле <b>groom/index.php</b> такой код:</p>
+
+<pre><code>&lt;?php 
+    if (isset($_SESSION['messageAppErrTypeGroom'])) {
+        echo '&lt;h4 style="border: 2px solid red; padding: 5px;">'. $_SESSION['messageAppErrTypeGroom'] . '&lt;/h4>';
+        unset($_SESSION['messageAppErrTypeGroom']);
+    }
+    if (isset($_SESSION['messageAppErrSizeGroom'])) {
+        echo '&lt;h4 style="border: 2px solid red; padding: 5px;">'. $_SESSION['messageAppErrSizeGroom'] . '&lt&lt;/h4>';
+        unset($_SESSION['messageAppErrSizeGroom']);
+    }
+    if (isset($_SESSION['messageDeleteGroom'])) {
+        echo '&lt;h4 style="border: 2px solid red; padding: 5px;">'. $_SESSION['messageDeleteGroom'] . '&lt;/h4>';
+        unset($_SESSION['messageDeleteGroom']);
+    }
+?>
+&lt;div class="block_pag">
+    &lt;?php
+     
+    if (isset($_GET['page'])) {
+        $page = $_GET['page'];
+    } else {
+        $page = 1;
+    }
+
+    $appCountOnPage = 4;
+    $appFrom = ($page - 1) * $appCountOnPage;
+
+    // выборка заявок, где услуга еще не оказана по 4 штуки
+    $applications = $pdo->prepare('SELECT * FROM applications WHERE status != "Услуга оказана" ORDER BY id DESC LIMIT :appFrom,:appCountOnPage');
+    $applications->bindValue(':appFrom', $appFrom, PDO::PARAM_INT);
+    $applications->bindValue(':appCountOnPage', $appCountOnPage, PDO::PARAM_INT);
+    $applications->execute();
+
+    $applicationsCount = $pdo->query('SELECT * FROM applications WHERE status != "Услуга оказана"');
+    $count = $applicationsCount->rowCount();
+    $res = ceil($count / $appCountOnPage);
+        
+    // пагинация
+    for ($i = 1; $i <= $res; $i++) {
+        if ($page == $i) {
+            $active = 'active';
+        } else {
+            $active = '';
+        }
+        echo '&lt;a class="' . $active . '" href="?page=' . $i . '">' . $i . '&lt;/a> ';
+    }
+
+    ?>
+    &lt;/div>
+    &lt;?php
+        $appArray = $applications->fetchAll();
+
+        // вывод заявок в виде HTML-разметки
+        if ($applications->rowCount() > 0) {
+            foreach ($appArray as $app) {
+                if ($app['status'] === 'Новая') {
+
+                    // вывод новых заявок
+                    echo '  &lt;div class="block_app">
+                        &lt;div class="block_app_item">Кличка питомца: ' . '&lt;span class="pet">' . $app['name_pet'] . '&lt;/span>' . '&lt;/div>
+                        &lt;div class="block_app_item">&lt;img src="../' . $app['foto_pet'] . '" alt="">&lt;/div>
+                        &lt;div class="block_app_item">Статус заявки: ' . '&lt;span class="status">' . $app['status'] . '&lt;/span>' . '&lt;/div>
+                        &lt;div class="block_app_item">
+                        &lt;form action="../vendor/updateData_vendor.php" method="post">
+                        &lt;input type="hidden" name="id" value="'. $app['id'] .'">
+                        &lt;button class="updateData" type="submit">Начать обработку данных&lt;/button>
+                        &lt;/form>
+                        &lt;/div>
+                        &lt;/div>
+                    ';
+                } else {
+
+                    // вывод обрабатываемых заявок
+                    echo '  &lt;div class="block_app" style="background-color: #98FB98;">
+                        &lt;div class="block_app_item">Кличка питомца: ' . '&lt;span class="pet">' . $app['name_pet'] . '&lt;/span>' . '&lt;/div>
+                        &lt;div class="block_app_item">&lt;img src="../' . $app['foto_pet'] . '" alt="">&lt;/div>
+                        &lt;div class="block_app_item">Статус заявки: ' . '&lt;span class="status">' . $app['status'] . '&lt;/span>' . '&lt;/div>
+                        &lt;div class="block_app_item">
+                        &lt;form action="../vendor/updateComplete_vendor.php" method="post" enctype="multipart/form-data">
+                        &lt;input type="hidden" name="id" value="'. $app['id'] .'">
+                        &lt;input type="hidden" name="id_user" value="'. $app['id_user'] .'">
+                        &lt;input class="fileGroom" type="file" name="image" required>
+                        &lt;button class="updateComplete" type="submit">Закончить обработку данных&lt;/button>
+                        &lt;/form>
+                        &lt;/div>
+                        &lt;/div>
+                    ';
+                }
+                
+            }
+        } else {
+            echo '&lt;div class="msg_else">Заявок нет&lt;/div>';
+        }
+     
+    ?>
+</code></pre>
+
+    <p>Напишем код для начала обработки заявки в файле <b>updateData_vendor.php</b>:</p>
+
+<pre><code>&lt;?php
+    session_start();
+    require_once '../connect.php';
+
+    $id = $_POST['id'];
+
+    // выборка заявок
+    $select_row = $pdo->prepare('SELECT * FROM applications WHERE id = ?');
+    $select_row->execute([
+        $id
+    ]);
+
+    // проверка на наличие конкретной заявки
+    if ($select_row->rowCount() > 0) {
+
+        // изменение статуса на "Обработка данных"
+        $pdo->prepare('UPDATE applications SET status = "Обработка данных" WHERE id = ?')->execute([
+            $id
+        ]);
+        header('Location: ../groom/');
+    } else {
+        $_SESSION['messageDeleteGroom'] = 'Заявка уже удалена';
+        header('Location: ../groom/');
+    }
+</code></pre>
+
+    <p>Напишем код для завершения обработки заявки в файле <b>updateComplete_vendor.php</b>:</p>
+
+<pre><code>&lt;?php
+    session_start();
+    require_once '../connect.php';
+
+    $user_id = $_POST['id_user'];
+    $id = $_POST['id'];
+    $path = 'uploads/' . $user_id. '/' . time() . $id . $_FILES['image']['name'];
+    $type = $_FILES['image']['type'];
+    $size = $_FILES['image']['size'];
+
+    if ($type === 'image/jpeg' || $type === 'image/bmp') {
+        if ($size &lt;= '2097152') {
+            move_uploaded_file($_FILES['image']['tmp_name'], '../' . $path);
+
+            // добавление новой фотографии администратором
+            $pdo->prepare('UPDATE applications SET foto_pet_admin = ? WHERE id = ?')->execute([
+                $path,
+                $id
+            ]);
+
+            // изменение статуса заявки на "Услуга оказана"
+            $pdo->prepare('UPDATE applications SET status = "Услуга оказана" WHERE id = ?')->execute([
+                $id
+            ]);
+            header('Location: ../groom/');
+        } else {
+            $_SESSION['messageAppErrSizeGroom'] = 'Размер фотографии должен быть не более 2мб';
+            header('Location: ../groom/');
+        }
+    } else {
+        $_SESSION['messageAppErrTypeGroom'] = 'Неверный формат фотографии';
+        header('Location: ../groom/');
+    }
+</code></pre>
+
+        <h3 id="stepEleven">Шаг 11: вывод всех выполненных заявок на главной странице с пагинацией</h3>
+
+        <p>Для этого дела напишем в общем файле <b>index.php</b> такой код:</p>
+
+<pre><code>&lt;div class="block_pag">
+    &lt;?php
+                
+    if (isset($_GET['page'])) {
+	$page = $_GET['page'];
+    } else {
+	$page = 1;
+    }
+
+    $appCountOnPage = 4;
+    $appFrom = ($page - 1) * $appCountOnPage;
+				
+    // выборка выполненных заявок по 4 штуки
+    $applications = $pdo->prepare('SELECT * FROM applications WHERE status = "Услуга оказана" ORDER BY id DESC LIMIT :appFrom,:appCountOnPage');
+    $applications->bindValue(':appFrom', $appFrom, PDO::PARAM_INT);
+    $applications->bindValue(':appCountOnPage', $appCountOnPage, PDO::PARAM_INT);
+    $applications->execute();
+
+    $applicationsCount = $pdo->query('SELECT * FROM applications WHERE status = "Услуга оказана"');
+    $count = $applicationsCount->rowCount();
+    $res = ceil($count / $appCountOnPage);
+    
+    // пагинация
+    for ($i = 1; $i &lt;= $res; $i++) {
+        if ($page == $i) {
+            $active = 'active';
+        } else {
+            $active = '';
+        }
+        echo '&lt;a class="' . $active . '" href="?page=' . $i . '">' . $i . '&lt;/a> ';
+    }
+    ?>
+&lt;/div>
+    &lt;?php
+
+    $appArray = $applications->fetchAll();
+ 
+    if ($applications->rowCount() > 0) {
+        foreach ($appArray as $app) {
+            echo '  &lt;div class="block_app" style="background-color: #BDECB6;">
+                    &lt;div class="block_app_item">Кличка питомца: ' . '&lt;span class="pet">' . $app['name_pet'] . '&lt;/span>' . '&lt;/div>
+                    &lt;div class="block_app_item">&lt;img src="' . $app['foto_pet'] . '" alt="">&lt;/div>
+                    &lt;/div>
+                ';
+        }
+    } else {
+        echo '&lt;div class="msg_else">Админ ничего не обработал&lt;/div>';
+    }
+             
+    ?>
+</code></pre>
+
+        <h3 id="stepTwelve">Шаг 12: адаптив и стили</h3>
+
+        <p>В этом пункте каждый для себя может решить - какие мне мне прописать стили и как сайт будет выглядеть на телефоне.<br>
+        Поэтому посмотрим на основные стили, 
+        направленные в основном на позиционирование элементов (стили писать в файле <b>style.css</b>):</p>
+
+<pre><code style="height: 400px">.header_block {
+    margin: auto;
+    max-width: 1170px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0px;
+}
+.header_block_logo {
+    display: block;
+    padding: 10px;
+    margin-right: 50px;
+}
+.header_menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+.header_menu_item {
+    text-align: right;
+    font-size: 20px;
+    padding: 10px;
+}
+.header_menu_item a {
+    color: black;
+    text-decoration: none;
+}
+.main {
+    padding: 50px 0px;
+    max-width: 1170px;
+    margin: auto;
+}
+footer {
+    max-width: 1170px;
+    margin: auto;
+    height: 50px;
+    font-size: 25px;
+    padding: 10px;
+}
+.block_form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.form {
+    padding: 10px;
+    display: flex;
+    margin-bottom: 50px;
+    flex-direction: column;
+    width: 550px;
+}
+.form_pet {
+    padding: 10px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 550px;
+}
+.block_app img {
+    width: 100%;
+}
+.block_app {
+    font-size: 20px;
+    margin-bottom: 50px;
+    background-color: #b2f3db;
+    border-radius: 10px;
+    padding: 15px 8px;
+}
+.block_app_item {
+    padding: 10px;
+    max-width: 500px;
+}
+</code></pre>
+
+        <h1>Полезные ссылки</h1>
+
+        <ul>
+            <li>
+                <a class="tasks_item_a" href="https://www.youtube.com/watch?v=GDVWdYZLM7w" target="_blank">
+                    PHP и PhpMyAdmin - создание, вывод, изменение и удаление данных
+                </a>
+            </li>
+            <li>
+                <a class="tasks_item_a" href="https://www.youtube.com/watch?v=eCItZh6uMVc" target="_blank">
+                    Авторизация и регистрация с сессией на чистом PHP
+                </a>
+            </li>
+        </ul>
+
+    </div>
+
+    <footer>
+        <div class="block_footer">
+            <div class="block_footer_text">Учебник по конкурсным заданиям WSR</div>
+        </div>
+    </footer>
+    <script src="../js/scripts.js"></script>
+    <script src="../js/highlight.pack.js"></script>
+    <script>hljs.highlightAll();</script>
+</body>
+</html>
