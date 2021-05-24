@@ -217,12 +217,16 @@ header {
 .arrow_description {
     filter: brightness(0%);
     margin-bottom: 2px;
-    transition: 0.3s;
+    transition: 0.5s;
     transform: rotate(180deg);
 }
 
 .arrow_description.rotate {
     transform: rotate(0deg);
+}
+
+.block_description {
+    position: relative;
 }
 
 .description {
