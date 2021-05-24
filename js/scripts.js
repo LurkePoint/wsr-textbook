@@ -14,7 +14,7 @@ $(document).ready(function() {
     });
 
     $('.title_description').click(function() {
-        $(this).closest('.selector_description').children('.block_description').slideToggle({duration: 500});
+        $(this).closest('.selector_description').children('.block_description').slideToggle({duration: 300});
         $(this).children('.arrow_description').toggleClass('rotate');
     });
 
