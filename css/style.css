@@ -149,6 +149,8 @@ header {
     margin: auto;
     max-width: 1170px;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
     padding: 0px 10px;
 }
 
@@ -263,7 +265,7 @@ code {
 }
 
 footer {
-    background-color: DarkSlateGrey;
+    background-color: DarkSlateBlue;
 }
 
 .block_footer {
